@@ -3,7 +3,7 @@
 - A solution to P2 in CS 315 by Wendall Roberts
 - Made using Godot 3.5
 
-
+- playerBlue_walk1-5.png from [Kenney's Abstract Platformer](https://www.kenney.nl/assets/abstract-platformer) liscened under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Third Party Assets
 
