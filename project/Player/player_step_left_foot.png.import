@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/playerBlue_walk5.png-afd236d29ee94941b00110556c440896.stex"
+path="res://.import/player_step_left_foot.png-2963a9c2c8b9301747244cda201384bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/playerBlue_walk5.png"
-dest_files=[ "res://.import/playerBlue_walk5.png-afd236d29ee94941b00110556c440896.stex" ]
+source_file="res://Player/player_step_left_foot.png"
+dest_files=[ "res://.import/player_step_left_foot.png-2963a9c2c8b9301747244cda201384bb.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
