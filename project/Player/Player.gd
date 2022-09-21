@@ -6,6 +6,7 @@ var _gravity := 0.5
 var _jump_velocity = -1
 var _walk_velocity = 1
 
+
 func _ready():
 # warning-ignore:return_value_discarded
 	$JumpTimer.connect("timeout", self, "_on_JumpTimer_timeout")
