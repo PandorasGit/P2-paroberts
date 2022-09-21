@@ -20,10 +20,14 @@ func _process(_delta: float) -> void:
 func _calculate_velocity() -> Vector2:
 	var velocity := Vector2.ZERO
 	velocity.x = Input.get_axis("move_left", "move_right")
-	if velocity.x < 0:
-		$AnimatedSprite.scale.x = -_walk_velocity
-	elif velocity.x > 0:
-		$AnimatedSprite.scale.x = _walk_velocity
+	if velocity.x != 0:
+		$AnimatedSprite.play("walk")
+		if velocity.x < 0:
+			$AnimatedSprite.scale.x = -_walk_velocity
+		elif velocity.x > 0:
+			$AnimatedSprite.scale.x = _walk_velocity
+	else:
+		$AnimatedSprite.play("idle")
 		
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		_has_jumped = true
