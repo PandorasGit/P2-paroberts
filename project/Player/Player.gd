@@ -13,7 +13,6 @@ var _walk_velocity := 1
 
 func _ready():
 # warning-ignore:return_value_discarded
-# warning-ignore:return_value_discarded
 	$JumpTimer.connect("timeout", self, "_on_JumpTimer_timeout")
 # warning-ignore:return_value_discarded
 	$RespawnTimer.connect("timeout", self, "_on_RespawnTimer_timeout")
