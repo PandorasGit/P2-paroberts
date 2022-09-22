@@ -30,4 +30,4 @@ gravity = Vector2( 0, 0 )
 initial_velocity = 10.0
 scale_amount = 1.5
 scale_amount_random = 1.0
-color = Color( 1, 0.694118, 0, 1 )
+color = Color( 0.701961, 0.129412, 0.0745098, 1 )
