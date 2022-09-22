@@ -33,26 +33,22 @@ func _process(_delta: float) -> void:
 func _move() -> Vector2:
 	var velocity := Vector2.ZERO
 	if _is_alive:
-		velocity = _calculate_velocity(velocity)
+		velocity = _calculate_input(velocity)
 	return velocity
 
 
-func _calculate_velocity(velocity: Vector2) -> Vector2:
-	
-	velocity.x = Input.get_axis("move_left", "move_right")
-	
-	
+func _calculate_input(input: Vector2) -> Vector2:
+	input.x = Input.get_axis("move_left", "move_right")
 # warning-ignore:standalone_ternary
-	_sprite.play("idle") if velocity.x == 0 else _walk(velocity.x)
-
+	_sprite.play("idle") if input.x == 0 else _walk(input.x)
 
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		_has_jumped = true
 		_jump_timer.start()
 	if _has_jumped:
-		velocity.y = -_jump_velocity
-	velocity.y += -_gravity
-	return velocity
+		input.y = -_jump_velocity
+	input.y += -_gravity
+	return input
 
 
 func _walk(velocity_x: float) -> void:

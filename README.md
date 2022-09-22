@@ -3,12 +3,20 @@
 - A solution to P2 in CS 315 by Wendall Roberts
 - Made using Godot 3.5, and Paint.net
 - Play the latest build [here](https://bsu-cs315.github.io/P2-waroberts/)
-- *A* key to move right or *S* key to move left. Press *Space* to jump.
+
+
+## Features and Controls
+- A key to move right or S key to move left. Press Space to jump.
+- CheckPoints that allow for respawn at later locations in game. They are red and white.
+- One way platforms that can be jumped through
 
 ## Third Party Assets
 
 
 
+
+## Acknowledgements
+- The one way platform tiles were drawn from the (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
 
 ***
 ## Project Report: Iteration 1
@@ -25,12 +33,12 @@
 - [ ] C-3: You have a clear legal right to use all incorporated assets, the licenses for all third-party assets are tracked in the <code>README.md</code> file, and you have satisfied all license requirements.
 - [X] C-4: The <code>README.md</code> contains instructions for how to play the game or such instructions are incorporated into the game.
 - [X] C-5: The game includes a player-controlled character, implemented as a <code>KinematicBody2D</code> and positioned in a conventional, <code>TileMap</code>-based, 2D-platforming world.
-- [X] C-6: The player's character can move left and right, with its movement bounded by impassable tiles.
+- [X] C-6: The player's character  acan move left and right, with its movement bounded by impassable tiles.
 - [X] C-7: The player's character can jump up and onto tiles.
 - [X] C-8: The player's character falls down when walking off a ledge.
 - [ ] B-1: The project report is complete.
 - [ ] B-2: The source code and project structure comply with <a href="https://www.gdquest.com/docs/guidelines/best-practices/godot-gdscript/">our adopted guidelines</a>.
-- [ ] B-3: There is a sprite element in the level that the player can interact with, such as a collectible, an enemy, a book, or a switch.
+- [X] B-3: There is a sprite element in the level that the player can interact with, such as a collectible, an enemy, a book, or a switch.
 - [X] B-4: The camera follows the character through a world that is larger than one screen.
 - [ ] A-1: Generate neither warnings nor errors at runtime.
 - [ ] A-2: Earn one star
