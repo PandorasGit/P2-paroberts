@@ -14,6 +14,7 @@
 
 - planet04, 05, 07, and 08 from [Kenney's Planets assetpack](https://www.kenney.nl/assets/platformer-pack-redux) liscened under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 - pointy_mountains.png from [Kenney's background elements](https://kenney.nl/assets/background-elements) liscened under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
+- [Silkscreen](https://fonts.google.com/specimen/Silkscreen?query=silkscreen) from Google Fonts Licensed under [OFL](licenses/OFL.txt).
 
 ## Acknowledgements
 - The one way platform tiles were drawn from method done in (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
