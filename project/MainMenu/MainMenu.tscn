@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://MainMenu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://MainMenu/Silkscreen-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://MainMenu/titlesprite.PNG" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
@@ -9,20 +10,58 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 2 )
 
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Title:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "TypeTitle"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Title:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.6, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 263, 259 )
+scale = Vector2( 1.03894, 1.0503 )
+texture = ExtResource( 3 )
+
 [node name="Title" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1.0
-margin_top = 140.0
-margin_bottom = -358.0
+margin_left = 6.0
+margin_top = 190.0
+margin_right = 7.0
+margin_bottom = -301.0
 custom_fonts/font = SubResource( 1 )
 text = "Trapped on Planet Paint"
 align = 1
+percent_visible = 0.0
 
 [node name="StartButton" type="Button" parent="."]
 anchor_right = 1.0
@@ -33,3 +72,8 @@ margin_right = -167.0
 margin_bottom = -194.0
 custom_fonts/font = SubResource( 2 )
 text = "START"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "TypeTitle"
+anims/RESET = SubResource( 3 )
+anims/TypeTitle = SubResource( 4 )

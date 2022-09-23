@@ -31,7 +31,7 @@ motion_scale = Vector2( 1.1, 1 )
 motion_offset = Vector2( 200, 0 )
 
 [node name="GreyPlanet" type="Sprite" parent="PlanetLayer"]
-position = Vector2( 622, 119 )
+position = Vector2( 934, 485 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 
