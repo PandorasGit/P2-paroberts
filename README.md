@@ -16,7 +16,7 @@
 - pointy_mountains.png from [Kenney's background elements](https://kenney.nl/assets/background-elements) liscened under [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Acknowledgements
-- The one way platform tiles were drawn from the (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
+- The one way platform tiles were drawn from method done in (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
 
 ***
 ## Project Report: Iteration 1
@@ -27,7 +27,7 @@
 ### Self-Assesment
 
 - [X] D-1: The repository contains a <code>README.md</code> file in its top-level directory.
-- [ ] D-2: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
+- [X] D-2: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
 - [ ] C-1: Your repository is well-formed, in our course organization, with an appropriate <code>.gitignore</code> file, no unnecessary files tracked, and all commit messages following <a href="https://cbea.ms/git-commit/">our commit message style guide</a>.
 - [ ] C-2: Your release is tagged using <a href="https://semver.org/">semantic versioning</a> where the major version is zero, the minor version is the iteration number, the patch version is incremented as usual for each change made to the minor version, and the release name matches the release tag.
 - [ ] C-3: You have a clear legal right to use all incorporated assets, the licenses for all third-party assets are tracked in the <code>README.md</code> file, and you have satisfied all license requirements.
@@ -41,7 +41,7 @@
 - [X] B-3: There is a sprite element in the level that the player can interact with, such as a collectible, an enemy, a book, or a switch.
 - [X] B-4: The camera follows the character through a world that is larger than one screen.
 - [ ] A-1: Generate neither warnings nor errors at runtime.
-- [ ] A-2: Earn one star
+- [X] A-2: Earn one star
 - [X] ⭐ Animate the main character using eithera <code>AnimatedSprite</code> or cutout animation
-- [ ] ⭐ Include parallax scrolling in the background.
+- [X] ⭐ Include parallax scrolling in the background.
 - [X] ⭐ Include tiles that can be passed in one direction, such as being able to jump up through a tile and land atop it.
