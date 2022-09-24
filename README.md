@@ -1,7 +1,7 @@
 
 # Project 2
 - A solution to P2 in CS 315 by Wendall Roberts
-- Made using Godot 3.5, and Paint.net
+- Made using Godot 3.5, LMMS, ChordChord, and Paint.net
 - Play the latest build [here](https://bsu-cs315.github.io/P2-waroberts/)
 
 
@@ -18,6 +18,7 @@
 
 ## Acknowledgements
 - The one way platform tiles were drawn from method done in (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
+- The music track was inspired by the techiques shown in by Madbook in this (tutorial)[https://youtu.be/2jLeuviQ7Ho].
 
 ***
 ## Project Report: Iteration 1
