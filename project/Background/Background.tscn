@@ -36,12 +36,12 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 
 [node name="BluePlanet" type="Sprite" parent="PlanetLayer"]
-position = Vector2( 222, 379 )
+position = Vector2( 78, 419 )
 scale = Vector2( 0.01, 0.01 )
 texture = ExtResource( 3 )
 
 [node name="RedPlanet" type="Sprite" parent="PlanetLayer"]
-position = Vector2( 399, 307 )
+position = Vector2( 174, 336 )
 scale = Vector2( 0.0593749, 0.0593749 )
 texture = ExtResource( 5 )
 
