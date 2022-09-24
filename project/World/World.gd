@@ -5,6 +5,7 @@ signal killed
 
 
 var _active_checkpoint := Vector2(50, 480)
+var _kill_line := 600
 
 
 onready var _player := find_node("Player")
@@ -25,7 +26,7 @@ func _connect_checkpoint_signals() -> void:
 
 
 func _process(_delta: float) -> void:
-	if _player.position.y > 600:
+	if _player.position.y > _kill_line:
 		_player.position = Vector2( _player.position.x, 599)
 		emit_signal("killed")
 

@@ -18,7 +18,7 @@ texture = ExtResource( 1 )
 centered = false
 
 [node name="StarLayer" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.6, 0.3 )
+motion_scale = Vector2( 0.3, 0.3 )
 motion_mirroring = Vector2( 950, 250.048 )
 
 [node name="Stars" type="Sprite" parent="StarLayer"]
@@ -27,16 +27,16 @@ texture = ExtResource( 7 )
 centered = false
 
 [node name="PlanetLayer" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 1.1, 1 )
+motion_scale = Vector2( 0.6, 1 )
 motion_offset = Vector2( 200, 0 )
 
 [node name="GreyPlanet" type="Sprite" parent="PlanetLayer"]
-position = Vector2( 934, 485 )
+position = Vector2( 36.0001, 423 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 
 [node name="BluePlanet" type="Sprite" parent="PlanetLayer"]
-position = Vector2( 54, 99 )
+position = Vector2( 222, 379 )
 scale = Vector2( 0.01, 0.01 )
 texture = ExtResource( 3 )
 
