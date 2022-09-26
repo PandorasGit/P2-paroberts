@@ -19,8 +19,8 @@
 - [Silkscreen](https://fonts.google.com/specimen/Silkscreen?query=silkscreen) from Google Fonts Licensed under [OFL](licenses/OFL.txt).
 
 ## Acknowledgements
-- The one way platform tiles were drawn from method done in (Godot 2D platformer demo)[https://godotengine.org/asset-library/asset/120].
-- The music track was inspired by the techiques shown in by Madbook in this (tutorial)[https://youtu.be/2jLeuviQ7Ho].
+- The one way platform tiles were drawn from method done in [Godot 2D platformer demo](https://godotengine.org/asset-library/asset/120).
+- The music track was inspired by the techiques shown in by Madbook in this [tutorial](https://youtu.be/2jLeuviQ7Ho).
 
 ***
 ## Project Report: Iteration 1
