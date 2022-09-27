@@ -38,11 +38,7 @@ func _move() -> Vector2:
 
 
 func _calculate_input(input: Vector2) -> Vector2:
-	input.x = Input.get_axis("move_left", "move_right")
-	# Using the ternary to _sprite animation to "idle"
-	# warning-ignore:standalone_ternary
-	_sprite.play("idle") if input.x == 0 else _walk(input.x)
-
+	input.x = _caluculate_x_input()
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		_has_jumped = true
 		_jump_timer.start()
@@ -52,9 +48,14 @@ func _calculate_input(input: Vector2) -> Vector2:
 	return input
 
 
-func _walk(velocity_x: float) -> void:
-	_sprite.play("walk")
-	_sprite.scale.x = -1 if velocity_x < 0 else 1
+func _caluculate_x_input() -> float:
+	var x_input = Input.get_axis("move_left", "move_right")
+	_sprite.play("idle" if x_input==0 else "walk")
+	if x_input < 0:
+		_sprite.scale.x = -1
+	elif x_input > 0:
+		_sprite.scale.x = 1
+	return x_input
 
 
 func _on_JumpTimer_timeout() -> void:
