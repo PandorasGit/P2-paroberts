@@ -26,7 +26,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	var velocity := _move()
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	move_and_slide(velocity * _speed, Vector2.UP)
 
 
