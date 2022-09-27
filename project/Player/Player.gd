@@ -18,13 +18,13 @@ onready var _jump_timer := find_node("JumpTimer")
 
 
 func _ready() -> void:
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	_jump_timer.connect("timeout", self, "_on_JumpTimer_timeout")
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	_respawn_timer.connect("timeout", self, "_on_RespawnTimer_timeout")
 
 
-func _process(_delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var velocity := _move()
 # warning-ignore:return_value_discarded
 	move_and_slide(velocity * _speed, Vector2.UP)
@@ -39,7 +39,8 @@ func _move() -> Vector2:
 
 func _calculate_input(input: Vector2) -> Vector2:
 	input.x = Input.get_axis("move_left", "move_right")
-# warning-ignore:standalone_ternary
+	# Using the ternary to _sprite animation to "idle"
+	# warning-ignore:standalone_ternary
 	_sprite.play("idle") if input.x == 0 else _walk(input.x)
 
 	if is_on_floor() and Input.is_action_just_pressed("jump"):

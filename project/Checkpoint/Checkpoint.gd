@@ -10,7 +10,7 @@ onready var _particles := find_node("ActivatedParticles")
 
 
 func _ready() -> void:
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	connect("body_entered", self, "_on_body_entered")
 
 

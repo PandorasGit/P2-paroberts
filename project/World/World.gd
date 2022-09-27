@@ -14,9 +14,9 @@ onready var _music := find_node("Music")
 
 func _ready() -> void:
 	_music.play()
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	connect("killed", _player, "_on_Player_killed")
-# warning-ignore:return_value_discarded
+	# warning-ignore:return_value_discarded
 	_player.connect("respawned", self, "_on_respawned")
 	_connect_checkpoint_signals()
 
