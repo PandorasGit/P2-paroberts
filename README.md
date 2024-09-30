@@ -1,6 +1,6 @@
 
 # Project 2
-- A solution to P2 in CS 315 by Wendall Roberts
+- A solution to P2 in CS 315 by Pandora Roberts
 - Made using Godot 3.5, LMMS, ChordChord, and Paint.net
 - Play the latest build [here](https://bsu-cs315.github.io/P2-waroberts/)
 
